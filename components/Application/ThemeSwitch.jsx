@@ -16,7 +16,7 @@ const ThemeSwitch = () => {
     const { setTheme } = useTheme()
     return (
         <DropdownMenu >
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild>
                 <Button type='button' variant="ghost" className='cursor-pointer'>
                     <IoSunnyOutline className='dark:hidden text-3xl'  />
                     <Moon className='hidden dark:block text-3xl' size={30} />

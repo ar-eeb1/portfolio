@@ -10,7 +10,7 @@ const AboutMe = () => {
                     </h1>
                     <h4 className="md:text-xl teext-md ">
                         Hi, I'm <span className="font-semibold">Areeb Amir</span>, an aspiring
-                        <span className="text-green-400"> MERN Stack Developer </span> passionate about
+                        <span className="text-green-400"> MERN Stack Developer / NextJS </span> passionate about
                         building full-stack web applications with MongoDB, Express.js, React, and Node.js.
                         Alongside MERN, I have developed several projects showcasing my skills in
                         <span className="font-semibold"> Next.js, GSAP animations, NextAuth, React Hook Form,</span>
