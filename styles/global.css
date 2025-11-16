@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libertinus+Keyboard&display=swap');
+/* 2️⃣ Import your custom font */
+@font-face {
+  font-family: 'MyFont';               /* Name you’ll use in Tailwind */
+  src: url('/fonts/MyFont.otf') format('opentype'); /* Path to font in /public/fonts */
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  overflow-x: hidden;
+  margin: 0; padding: 0;
+}
+
