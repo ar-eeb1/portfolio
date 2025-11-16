@@ -13,6 +13,7 @@ import Typewriter from './Typewriter'
 import Connect from './Connect'
 import Image from 'next/image'
 import pp from '@/public/areeb.png'
+import Link from 'next/link'
 
 const Hero = () => {
   const [name, setName] = useState('')
@@ -67,9 +68,9 @@ const Hero = () => {
             <Typewriter />
 
             <div className="flex items-center md:gap-4 gap-2 flex-wrap md:mt-4 mt-3">
-              <button className="bg-linear-to-r from-blue-500 via-teal-400 to-green-500 text-white font-semibold md:py-4 md:px-6 py-2 px-4 rounded-full shadow-lg hover:scale-105 hover:from-teal-400 hover:to-blue-500 transition-transform duration-300 cursor-pointer">
+              <Link href='/contact' className="bg-linear-to-r from-blue-500 via-teal-400 to-green-500 text-white font-semibold md:py-4 md:px-6 py-2 px-4 rounded-full shadow-lg hover:scale-105 hover:from-teal-400 hover:to-blue-500 transition-transform duration-300 cursor-pointer">
                 Hire Me
-              </button>
+              </Link>
 
               <div className="bg-linear-to-r from-blue-500 via-teal-400 to-green-500 text-white font-semibold py-1 px-1 rounded-full shadow-lg hover:scale-105 hover:from-teal-400 hover:to-blue-500 transition-transform duration-300 cursor-pointer">
                 <a
