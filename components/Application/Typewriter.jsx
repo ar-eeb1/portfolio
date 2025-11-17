@@ -52,7 +52,7 @@ export default function Typewriter() {
   }, []);
 
   return (
-    <div>
+    <div className="mt-10">
       <h1 className="md:text-6xl text-2xl  font-semibold md:my-4 md:underline md:underline-offset-8 decoration-1">
         I Am <span ref={textRef}></span>
       </h1>
