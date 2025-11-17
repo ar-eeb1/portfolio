@@ -18,10 +18,10 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#about" className="hover:text-white">About</a></li>
-            <li><a href="#projects" className="hover:text-white">Projects</a></li>
-            <li><a href="#skills" className="hover:text-white">Skills</a></li>
-            <li><a href="#contact" className="hover:text-white">Contact</a></li>
+            <li><a href="/#about" className="hover:text-white">About</a></li>
+            <li><a href="/projects" className="hover:text-white">Projects</a></li>
+            <li><a href="/#skills" className="hover:text-white">Skills</a></li>
+            <li><a href="/contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
 
@@ -29,10 +29,10 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold text-white mb-3">Connect</h3>
           <div className="flex justify-center md:justify-start space-x-4">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ar-eeb1" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github text-2xl hover:text-white transition-colors"></i>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/areeb-amir-1a8208286/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin text-2xl hover:text-white transition-colors"></i>
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">

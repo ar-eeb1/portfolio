@@ -123,9 +123,9 @@ const Projects = () => {
                 />
             </div>
 
-            {/* <div className='w-full h-1/2 text-center flex flex-col justify-center'>
+            <div className='w-full h-1/2 text-center flex-col justify-center hidden'>
                 <ViewsCounter />
-            </div> */}
+            </div>
 
 
         </div>

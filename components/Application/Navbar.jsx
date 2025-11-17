@@ -4,9 +4,14 @@ import Link from 'next/link';
 import ThemeSwitch from './ThemeSwitch';
 import { CiMenuFries } from "react-icons/ci";
 import { Button } from '../ui/button';
-
+import { Sidebar, SidebarContent } from '../ui/sidebar';
+import AppSideBar from './AppSideBar';
+import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
+import { Menu } from 'lucide-react';
+import { SidebarProvider } from "@/components/ui/sidebar"
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -32,7 +37,7 @@ const Navbar = () => {
           <p className="text-xl md:text-3xl w-full text-center tracking-[0.35em] font-bold">Developer</p>
         </Link>
 
-        <div className="hidden  md:flex lg:gap-10 md:gap-5 text-lg font-medium nav-components items-center">
+        <div className="hidden md:flex lg:gap-10 md:gap-5 text-lg font-medium nav-components items-center">
           <ThemeSwitch />
           <Link href="/#about" className="relative px-3 py-1 rounded-full overflow-hidden text-black dark:text-white  before:absolute before:top-0 before:left-0 before:w-0 before:h-full  before:bg-green-400 dark:before:bg-green-700 before:z-0  before:transition-all before:duration-300  hover:before:w-full"><span className="relative z-10">About</span></Link>
           <Link className="relative px-3 py-1 rounded-full overflow-hidden text-black dark:text-white  before:absolute before:top-0 before:left-0 before:w-0 before:h-full  before:bg-green-400 dark:before:bg-green-700 before:z-0  before:transition-all before:duration-300  hover:before:w-full" href="#skills"><span className="relative z-10">Skills</span></Link>
@@ -42,13 +47,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile view */}
-        <div className="flex md:hidden items-center gap-2">
-          <ThemeSwitch />   {/* Optional: keep dark toggle in mobile */}
-          <Button type='button' size='icon'>
-            <CiMenuFries size={30} />
-          </Button>
-        </div>
+        <div className="flex md:hidden gap-2">
+          <ThemeSwitch />
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger>
+              <Menu className="w-6 h-6" />
+            </SheetTrigger>
 
+            <SheetContent side="left" className="p-0">
+              <AppSideBar mobile={true} onClose={() => setOpen(false)} />
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </nav>
   );

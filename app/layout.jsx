@@ -27,28 +27,23 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#101828] text-zinc-900 dark:text-zinc-100`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
           <Script src="https://cdn.lordicon.com/lordicon.js" />
           <main className="md:pt-10 pt-20">{children}</main>
           <Link href="https://wa.me/+923171232544" target="_blank" className="fixed bottom-10 right-10">
-          <lord-icon
-            src="https://cdn.lordicon.com/dnphlhar.json"
-            trigger="loop"
-            delay="1000"
-            colors="primary:#0e98f6,secondary:#00ca5d"
-            style={{ width: 70, height: 70 }}
-          >
-          </lord-icon>
-        </Link>
-        <Footer />
-      </ThemeProvider>
-    </body>
+            <lord-icon
+              src="https://cdn.lordicon.com/dnphlhar.json"
+              trigger="loop"
+              delay="1000"
+              colors="primary:#0e98f6,secondary:#00ca5d"
+              style={{ width: 70, height: 70 }}
+            >
+            </lord-icon>
+          </Link>
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html >
   );
 }

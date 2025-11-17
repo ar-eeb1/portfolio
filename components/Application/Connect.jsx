@@ -16,7 +16,7 @@ function Connect() {
           </lord-icon></Link>
       </div>
       <div className="git cursor-pointer">
-        <Link href='' target='_blank'>
+        <Link href='https://github.com/ar-eeb1' target='_blank'>
           <lord-icon
             src="https://cdn.lordicon.com/acgiczyg.json"
             trigger="loop"
