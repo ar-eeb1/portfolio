@@ -12,9 +12,8 @@ const ProjectCard = ({ src, projName, description, url, tags, date }) => {
 
   const onClickLink = async (url) => {
     try {
-      await axios.post('/api/view/create', {
-        data: { url: window.location.href }   // FIXED
-      });
+      axios.post('/api/view/create', { url })
+
 
       window.open(url, "_blank");
     } catch (error) {
