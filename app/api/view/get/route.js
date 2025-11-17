@@ -5,8 +5,15 @@ export async function GET() {
     try {
         await connectDB()
         const views = await ViewModel.find().sort({ createdAt: -1 })
-        return new Response(JSON.stringify({ success: true, views }, { status: 200 }))
+
+        return new Response(
+            JSON.stringify({ success: true, views }),
+            { status: 200 }
+        )
     } catch (error) {
-        return new Response(JSON.stringify({ error: error.message }), { status: 500 })
+        return new Response(
+            JSON.stringify({ error: error.message }),
+            { status: 500 }
+        )
     }
 }
