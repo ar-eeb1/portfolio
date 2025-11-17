@@ -15,7 +15,7 @@ const Projects = () => {
                     src={["https://res.cloudinary.com/dliahmplq/image/upload/v1763217760/c3c4e523-1df0-44cf-9946-49afc48b387d.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1763288978/d17ee86d-09b6-475e-9271-f11736d7db07.png"]}
                     projName="Portfolio Website"
                     description="This portfolio is display of my technical skills, creative thinking, and practical experience in building modern web applications. It highlights my ability to develop clean, responsive, and user-focused interfaces using Next.js, React, and Tailwind CSS."
-                    url='http://localhost:3000/'
+                    url='https://portfolio-areeb.vercel.app/'
                     tags={['Portfolio', 'Project', 'Personal']}
                     date='November-2025'
                 />

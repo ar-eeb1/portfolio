@@ -12,13 +12,17 @@ const ProjectCard = ({ src, projName, description, url, tags, date }) => {
 
   const onClickLink = async (url) => {
     try {
-      axios.post('/api/view/create', { data: { url } })
-      window.open(url, "_blank")
+      await axios.post('/api/view/create', {
+        data: { url: window.location.href }   // FIXED
+      });
+
+      window.open(url, "_blank");
     } catch (error) {
-      console.log(error)
-      alert('Failed to record view')
+      console.log(error);
+      alert('Failed to record view');
     }
-  }
+  };
+
 
   const settings = {
     dots: true,
