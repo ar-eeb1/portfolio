@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { connectDB } from "@/lib/databaseConnection"
 import ViewModel from "@/models/Views.model";
 
