@@ -123,7 +123,7 @@ const Projects = () => {
                 />
             </div>
 
-            <div className='w-full h-1/2 text-center flex-col justify-center flex'>
+            <div className='w-full h-1/2 text-center flex-col justify-center hidden'>
                 <ViewsCounter />
             </div>
 
