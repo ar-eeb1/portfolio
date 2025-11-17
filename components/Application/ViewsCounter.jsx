@@ -41,19 +41,17 @@ const ViewsCounter = () => {
         }
         
         const data = await res.json();
-
         const counts = data.views.reduce((acc, v) => {
           acc[v.visitedUrl] = (acc[v.visitedUrl] || 0) + 1;
           return acc;
         }, {});
 
-        // Convert to array and sort by views
         const formatted = Object.keys(counts)
           .map((url) => ({
             website: url
               .replace(/^https?:\/\//, "")
               .replace(/\/$/, "")
-              .split("/")[0], // Get just the domain
+              .split("/")[0], 
             fullUrl: url,
             views: counts[url],
           }))
@@ -72,11 +70,10 @@ const ViewsCounter = () => {
 
   const stats = useMemo(() => {
     if (chartData.length === 0) return null;
-    
     const totalViews = chartData.reduce((sum, item) => sum + item.views, 0);
     const topSite = chartData[0];
     const avgViews = Math.round(totalViews / chartData.length);
-    
+  
     return { totalViews, topSite, avgViews };
   }, [chartData]);
 
