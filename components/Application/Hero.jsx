@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button'
 import Typewriter from './Typewriter'
 import Connect from './Connect'
 import Image from 'next/image'
-import pp from '@/public/areeb.png'
+import pp from '@/public/areeb.jpeg'
 import Link from 'next/link'
 
 const Hero = () => {
@@ -88,14 +88,38 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="md:w-1/3 w-full flex flex-col items-center gap-6">
-            <Image
-              src={pp}
-              width={200}
-              height={200}
-              alt="Areeb"
-              className="rounded-full hover:scale-105 transition-transform duration-300"
-            />
+          <div className="md:w-1/3 w-full flex flex-col justify-center items-center gap-6">
+            {/* Profile Picture Section with Curved Background */}
+            <div className="absolute right-0 top-0 bottom-0 w-1/3 md:flex hidden items-center justify-end">
+              {/* Curved Background Shape */}
+              <div className="absolute right-0 top-0 bottom-0 w-full bg-linear-to-br from-blue-500/20 via-teal-400/20 to-green-500/20"
+                style={{
+                  clipPath: 'ellipse(70% 50% at 100% 50%)',
+                }}>
+              </div>
+
+              {/* Profile Image */}
+              <div className="relative z-10 mr-12">
+                <Image
+                  src={pp.src}
+                  width={300}
+                  height={300}
+                  alt="Areeb"
+                  className="rounded-full hover:scale-105 transition-transform duration-300 object-cover shadow-2xl border-4 border-white/20"
+                />
+              </div>
+            </div>
+
+            {/* Mobile Profile Picture */}
+            <div className="md:hidden w-full flex justify-center">
+              <Image
+                src={pp.src}
+                width={250}
+                height={250}
+                alt="Areeb"
+                className="rounded-full hover:scale-105 transition-transform duration-300 object-cover shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       )}
