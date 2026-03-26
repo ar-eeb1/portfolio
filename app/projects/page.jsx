@@ -12,6 +12,22 @@ const Projects = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 m-10 gap-10'>
                 <ProjectCard
+                    src={["https://res.cloudinary.com/dliahmplq/image/upload/v1774516866/Screenshot_2026-03-26_141718_n5gpdz.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1774516866/Screenshot_2026-03-26_141837_tvelvw.png"]}
+                    projName="Eid Wish Creator"
+                    description="This web is an interactive and magical application designed to help users create, customize, and share personalized Eid greetings. Going beyond traditional text messages, my platform introduces gamified and financial elements to the Eid gifting experience (Eidi). Users can choose from multiple creative modes to send their wishes, track the status of their sent links, and manage their interactions through a personalized dashboard. The app also includes an authentication system and a dedicated master(ME)/admin panel for user management."
+                    url='https://wisheid.vercel.app/'
+                    tags={['NextJS', 'AI Powered', 'Framer Motion', 'Sonner']}
+                    date='March-2026'
+                />
+                <ProjectCard
+                    src={["https://res.cloudinary.com/dliahmplq/image/upload/v1774516188/Screenshot_2026-03-14_175724_zhsmji.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1774516188/Screenshot_2026-03-26_140805_lil845.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1774516192/Screenshot_2026-03-03_003603_cbcyeu.png"]}
+                    projName="Valentine Wish Creator"
+                    description="I created a web app for personalized Valentine wishes so that anyone could create and share links with each other. Then i uploaded the content because I love creating things and showcasing my skills to others while building a new audience. It was loved across borders and received over 5,000 users 🔝. In addition to that, more than 17,000 pictures were uploaded 🤯. It was not just an application—it was a milestone that showcased my skills and performance in the web development industry 🔥🔥."
+                    url='https://valentinecardforyou.vercel.app/'
+                    tags={['NextJS', 'AI Powered', 'Full Stack']}
+                    date='February-2026'
+                />
+                <ProjectCard
                     src={["https://res.cloudinary.com/dliahmplq/image/upload/v1763217760/c3c4e523-1df0-44cf-9946-49afc48b387d.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1763288978/d17ee86d-09b6-475e-9271-f11736d7db07.png"]}
                     projName="Portfolio Website"
                     description="This portfolio is display of my technical skills, creative thinking, and practical experience in building modern web applications. It highlights my ability to develop clean, responsive, and user-focused interfaces using Next.js, React, and Tailwind CSS."
