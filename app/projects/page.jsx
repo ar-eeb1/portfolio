@@ -19,7 +19,6 @@ const Projects = () => {
                         "https://res.cloudinary.com/dliahmplq/image/upload/v1777094537/Screenshot_2026-04-16_193016_gyprie.png",
                         "https://res.cloudinary.com/dliahmplq/image/upload/v1777094538/Screenshot_2026-04-16_193030_nrknhn.png",
                         "https://res.cloudinary.com/dliahmplq/image/upload/v1777094537/Screenshot_2026-04-16_192938_aqbp7u.png"
-
                     ]}
                     projName="Eventsora"
                     description="Eventsora is an all-in-one event marketplace designed to bridge the gap between service providers and event planners. Built with the Next.js and React features, it offers a premium, high-speed experience for discovering and booking event services. I engineered a robust provider ecosystem from the ground up, featuring interactive analytics dashboards, a seamless messaging interface, and a custom-built media management system. By combining the power of Tailwind with Redux Toolkit, I ensured that the platform is not only technically powerful but also visually stunning and intuitively responsive across all devices."
