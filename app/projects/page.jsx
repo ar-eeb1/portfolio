@@ -12,6 +12,22 @@ const Projects = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 m-10 gap-10'>
                 <ProjectCard
+                    src={[
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094538/Screenshot_2026-03-04_004839_mhvsg4.png",
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094539/Screenshot_2026-04-17_175624_pdd1of.png",
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094537/Screenshot_2026-04-16_192951_butm9v.png",
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094537/Screenshot_2026-04-16_193016_gyprie.png",
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094538/Screenshot_2026-04-16_193030_nrknhn.png",
+                        "https://res.cloudinary.com/dliahmplq/image/upload/v1777094537/Screenshot_2026-04-16_192938_aqbp7u.png"
+
+                    ]}
+                    projName="Eventsora"
+                    description="Eventsora is an all-in-one event marketplace designed to bridge the gap between service providers and event planners. Built with the Next.js and React features, it offers a premium, high-speed experience for discovering and booking event services. I engineered a robust provider ecosystem from the ground up, featuring interactive analytics dashboards, a seamless messaging interface, and a custom-built media management system. By combining the power of Tailwind with Redux Toolkit, I ensured that the platform is not only technically powerful but also visually stunning and intuitively responsive across all devices."
+                    url='http://eventsora.com/'
+                    tags={['NextJS', 'React', 'MongoDB', 'Tailwind', 'NextAuth', 'Cloudinary', 'Node.js']}
+                    date='April-2026'
+                />
+                <ProjectCard
                     src={["https://res.cloudinary.com/dliahmplq/image/upload/v1774516866/Screenshot_2026-03-26_141718_n5gpdz.png", "https://res.cloudinary.com/dliahmplq/image/upload/v1774516866/Screenshot_2026-03-26_141837_tvelvw.png"]}
                     projName="Eid Wish Creator"
                     description="This web is an interactive and magical application designed to help users create, customize, and share personalized Eid greetings. Going beyond traditional text messages, my platform introduces gamified and financial elements to the Eid gifting experience (Eidi). Users can choose from multiple creative modes to send their wishes, track the status of their sent links, and manage their interactions through a personalized dashboard. The app also includes an authentication system and a dedicated master(ME)/admin panel for user management."
